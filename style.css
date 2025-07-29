@@ -1,0 +1,230 @@
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+    
+    .slider-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+    .team-card {
+      transition: all 0.3s ease;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    .team-card:hover {
+      background-color: #e74c3c;
+      color: #fff;
+      
+    }
+
+    .team-card:hover h5,
+    .team-card:hover p {
+      color: #fff;
+    }
+
+    .social-icons {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .team-card:hover .social-icons {
+      opacity: 1;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      text-decoration: none;
+      transform: scale(1.2);
+    }
+
+    .slider-track {
+      display: flex;
+      gap: 20px;
+      animation: scrollLeft 30s linear infinite;
+      width: max-content;
+    }
+
+    .slider-track img {
+      height: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .slider-track img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .navbar {
+      background-color: #111; /* Dark background */
+    }
+
+    .navbar .nav-link,
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ff6f61 !important;
+    }
+
+    .dropdown-menu {
+      background-color: #fff;
+      border-radius: 0;
+    }
+
+    .dropdown-item:hover {
+      background-color: #ffe1da;
+    }
+
+    .btn-red {
+      background-color: #ff3c2e;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-green {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-red:hover,
+    .btn-green:hover {
+      opacity: 0.9;
+    }
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-section {
+      padding: 60px 0;
+    }
+
+    .hero-text h6 {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .hero-text span {
+      color: #ff6f61;
+    }
+
+    .hero-btn {
+      background-color: #ff6f61;
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .navbar {
+      background-color: #111;
+    }
+
+    .navbar .nav-link, .navbar-brand {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ff6f61 !important;
+    }
+        .testimonial-card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .dot.active,
+    .dot:hover {
+      background-color: #ff5722;
+    }
+        .testimonial-card {
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      height: 100%;
+    }
+    .testimonial-quote {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: #f97316;
+      opacity: 0.2;
+    }
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .stars i {
+      color: #fbbf24;
+    }
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #bbb;
+    }
+    .carousel-indicators .active,
+    .carousel-indicators [data-bs-target]:hover {
+      background-color: #f97316;
+    }

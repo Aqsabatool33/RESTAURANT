@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foodix Style Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./booktable.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="foodix.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#foodixNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="foodixNavbar">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home Restaurant</a></li>
+            <li><a class="dropdown-item" href="#">Home Beef</a></li>
+            <li><a class="dropdown-item" href="#">Home Burger</a></li>
+            <li><a class="dropdown-item" href="#">Home Pizza</a></li>
+            <li><a class="dropdown-item" href="#">Home Sushi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Menu</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Burger Menu</a></li>
+            <li><a class="dropdown-item" href="#">Pizza Menu</a></li>
+            <li><a class="dropdown-item" href="#">Drink Menu</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+            <li><a class="dropdown-item" href="#">FAQs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All Products</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="#">Checkout</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+            <li><a class="dropdown-item" href="#">Single Blog</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      
+      <button class="btn btn-danger" onclick="window.location.href='booktable.html'">Book A Table</button>
+      
+      <button class="btn btn-success ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+  <i class="bi bi-cart3"></i> 
+</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 hero-text">
+        <h6>HOT FOR EVERY SUNDAY</h6>
+        <h1>Enjoy Our <span>Delicious</span> Food</h1>
+        <p>Savor the taste of our delicious, expertly crafted dishes made with the finest ingredients, offering a perfect blend of flavors.</p>
+        <button class="hero-btn">Order Now</button>
+      </div>
+      <div class="col-md-6 hero-img text-center">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/hero/hero-four_img1.png" alt="Delicious Food">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-uppercase fw-bold mb-4" style="color:black ;">Our Categories</h2>
+    <div class="row g-3 mb-5">
+      <div class="col-md-3">
+        <div class="p-4  text-white rounded text-center shadow">
+          <i class="bi bi-hamburger fs-1 mb-2"></i>
+          <h5 class="mb-1" style="color:black ;">Delish Burger</h5>
+          <p class="mb-0" style="color:black ;">25 items</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 bg-white border rounded text-center shadow-sm">
+          <i class="bi bi-box-seam fs-1 text-danger mb-2"></i>
+          <h5 class="mb-1" style="color:black ;">Sandwiches</h5>
+          <p class="mb-0" style="color:black ;">20 items</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 bg-white border rounded text-center shadow-sm">
+          <i class="bi bi-cup-hot fs-1 text-danger mb-2"></i>
+          <h5 class="mb-1" style="color:black ;">Mexican Cuisine</h5>
+          <p class="mb-0" style="color:black ;">30 items</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-4 bg-white border rounded text-center shadow-sm">
+          <i class="bi bi-pizza fs-1 text-danger mb-2"></i>
+          <h5 class="mb-1" style="color:black ;">Italian Cuisine</h5>
+          <p class="mb-0" style="color:black ;">19 items</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/about/about-6.png" alt="Food Plate" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <small class="text-warning text-uppercase fw-bold">About Us</small>
+        <h3 class="fw-bold mt-2" style="color:black ;">Delicia's About Fresh Flavorful Dining</h3>
+        <p class="text-muted">
+          We are passionate about serving fresh, flavorful dishes crafted with the finest ingredients.
+          Every meal is thoughtfully prepared to deliver a memorable dining experience you'll love.
+        </p>
+<div class="row mb-3">
+    <div class="col-6">
+      <div class="bg-white p-3 rounded shadow-sm text-center">
+        <h4 class="text-danger fw-bold mb-1">1500+</h4>
+        <small class="text-muted">Total Food Item</small>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="bg-white p-3 rounded shadow-sm text-center">
+        <h4 class="text-danger fw-bold mb-1">500+</h4>
+        <small class="text-muted">Branch Office</small>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn btn-danger px-4">Read More</a>
+</div>
+     </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-black text-white position-relative overflow-hidden">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold text-uppercase">Today Our Special<br> Combo Offers</h2>
+        <h4 class="text-warning fw-bold">GET 25% DISCOUNT</h4>
+        <div class="d-flex gap-3 my-4 flex-wrap">
+          <div class="text-center">
+            <h3 class="fw-bold mb-0">160</h3>
+            <small>Days</small>
+          </div>
+          <div class="text-center">
+            <h3 class="fw-bold mb-0">17</h3>
+            <small>Hours</small>
+          </div>
+          <div class="text-center">
+            <h3 class="fw-bold mb-0">58</h3>
+            <small>Min</small>
+          </div>
+          <div class="text-center">
+            <h3 class="fw-bold mb-0">04</h3>
+            <small>Sec</small>
+          </div>
+        </div>
+       <a href="#" class="btn btn-danger px-4">Read More</a>
+</div>
+      <div class="col-md-4 text-end position-relative">
+        
+        <img src="https://html.pixelfit.agency/foodix/assets/images/bg/offer-img1.png" alt="Burger Combo" class="img-fluid" style="max-height: 240px; width: 90%;">
+        <div class="bg-white text-danger fw-bold px-3 py-1 rounded position-absolute" style="bottom: 10px; right: 15px;">
+          $10.99
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light mt-5">
+  <div class="container text-center">
+    <p class="text-uppercase text-warning fw-bold small mb-1">Why Choose Us</p>
+    <h2 class="fw-bold mb-5" style="color: black;">Why We're Your Best Choice</h2>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="border p-4 rounded h-100 shadow-sm">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width:60px; height:60px;">
+            <i class="bi bi-basket3-fill fs-4"></i>
+          </div>
+          <h5 class="fw-semibold" style="color: black;">Hygienic Food</h5>
+          <p class="text-muted small mb-0">We are passionate about serving fresh, flavorful.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="border p-4 rounded h-100 shadow-sm">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width:60px; height:60px;">
+            <i class="bi bi-person-hearts fs-4"></i>
+          </div>
+          <h5 class="fw-semibold" style="color: black;">Fresh Environment</h5>
+          <p class="text-muted small mb-0">We are passionate about serving fresh, flavorful.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="border p-4 rounded h-100 shadow-sm">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width:60px; height:60px;">
+            <i class="bi bi-egg-fried fs-4"></i>
+          </div>
+          <h5 class="fw-semibold" style="color: black;">Skilled Chefs</h5>
+          <p class="text-muted small mb-0">We are passionate about serving fresh, flavorful.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="border p-4 rounded h-100 shadow-sm">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width:60px; height:60px;">
+            <i class="bi bi-balloon-heart fs-4"></i>
+          </div>
+          <h5 class="fw-semibold" style="color: black;">Event & Party</h5>
+          <p class="text-muted small mb-0">We are passionate about serving fresh, flavorful.</p>
+        </div>
+      </div>
+    </div>
+    <section class="py-5" style="background-color: black">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h6 class="text-warning text-uppercase fw-bold mb-3">Reservation</h6>
+        <h2 class="fw-bold mb-4">Need Reservation? Booking Your Table Now</h2>
+        <p class="mb-4">
+          <a href="#" class="btn btn-outline-warning btn-sm me-3">Order Online</a>
+
+        </p>
+        <button class="bg-success" style="color: white; width: 30%; padding-top: 1%; padding-right: 1%; padding-left: 1%; padding-bottom: 1%; border-radius: 10px;">+555-657-8876</button>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-success p-4 p-md-5 text-white rounded-4 shadow">
+          <h4 class="mb-4 fw-semibold">Create A Booking Table</h4>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating " >
+                  <input type="text" class="form-control bg-success" id="name" placeholder="Name">
+                  <label for="name ">Enter your Name</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control bg-success" id="email" placeholder="Email">
+                  <label for="email">Enter your Email</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="tel" class="form-control bg-success" id="phone" placeholder="Phone">
+                  <label for="phone">Enter your Phone</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="date" class="form-control bg-success" id="date" placeholder="Date">
+                  <label for="date">Date</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <select class="form-select bg-success" id="people">
+                    <option selected>01 People</option>
+                    <option>02 People</option>
+                    <option>03 People</option>
+                    <option>04 People</option>
+                    <option>05 People</option>
+                  </select>
+                  <label for="people">Number of People</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-grid">
+                <button type="submit" class="btn btn-warning fw-semibold py-3">
+                  Book a Table
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container py-5">
+      <p class="text-uppercase text-warning fw-bold small mb-1">DELICIOUS MENU</p>
+  <h2 class="text-center fw-bold mb-5" style="color: black;">EXPLORE OUR DELICIOUS <br>MENU</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb1.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Truffle Mac and Cheese</h6>
+          <p class="card-text">Indulgent mac and cheese with truffle essence.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb3.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Honey-Glazed Salmon</h6>
+          <p class="card-text">Sweet and savory honey-glazed salmon fillet.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb5.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Gourmet Mushroom Risotto</h6>
+          <p class="card-text">Rich, creamy risotto with gourmet mushrooms.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb7.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">BBQ Bacon Burger</h6>
+          <p class="card-text">Juicy burger topped with BBQ sauce and bacon.</p>
+          <p class="text-end fw-bold text-danger mb-0">$35</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb2.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Grilled Ribeye Steak</h6>
+          <p class="card-text">Perfectly grilled ribeye steak with savory seasoning.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb4.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Thai Coconut Curry</h6>
+          <p class="card-text">Fragrant Thai coconut curry with vibrant vegetables.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb6.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Margarita shrimp tacos</h6>
+          <p class="card-text">Zesty shrimp tacos with fresh margrita flavor.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+            <div class="card mb-4">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/menu/menu-thumb8.png" class="card-img-top" alt="" style="width: 50px;">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Spicy tuna roll</h6>
+          <p class="card-text">Spicy tuna roll with a bold,flavorful kick.</p>
+          <p class="text-end fw-bold text-danger mb-0">$25.50</p>
+        </div>
+      </div>
+  <div class="row">
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+</div>
+<div class="container-fluid slider-container">
+  <div class="slider-track">
+
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-15.jpg" alt="Pizza">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-14.jpg" alt="Chicken">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-18.jpg" alt="Salad">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-16.jpg" alt="Muffins">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-15.jpg" alt="Pizza2">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-15.jpg" alt="Pizza">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-14.jpg" alt="Chicken">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-18.jpg" alt="Salad">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-16.jpg" alt="Muffins">
+    <img src="https://html.pixelfit.agency/foodix/assets/images/gallery/gallery-15.jpg" alt="Pizza2">
+  </div>
+</div>
+<div class="container mt-5">
+        <p class="text-uppercase text-warning fw-bold small mb-1">OUR SPECIAL CHEFS</p>
+  <h2 class="text-center mb-5 fw-bold" style="color: black;">INTRODUCING OUR CULINARY<br> MASTERS</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="team-card shadow">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/team/team-14.jpg"  class="rounded-circle mb-3" alt="David Liam">
+        <h5 style="color: black;">David Liam</h5>
+        <p style="color: black;">CEO</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="team-card shadow">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/team/team-15.jpg" class="rounded-circle mb-3" alt="Alex Mika">
+        <h5 style="color: black;">Alex Mika</h5>
+        <p style="color: black;">Executive Chef</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="team-card shadow">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/team/team-16.jpg" class="rounded-circle mb-3" alt="John Smith">
+        <h5 style="color: black;">John Smith</h5>
+        <p style="color: black;">Executive Chef</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<section class="py-5 bg-light">
+  <div class="container">
+          <p class="text-uppercase text-warning fw-bold small mb-1">TESTIMONALS</p>
+    <h2 class="text-center fw-bold mb-4" style="color: black;">OUR GUESTS ARE SAYING</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="border rounded p-4 h-100 bg-white">
+                <div class="mb-2 text-warning">
+                  ★★★★★
+                </div>
+                <p style="color: black;">From the moment we walked in, we were impressed by the warm arrd inviting atmosphere. The food was exceptional-each dish was bursting with fresh, vibrant flavors. The staff was attentive and knowledgeable, making our dining experience..</p>
+                <div class="d-flex align-items-center mt-3">
+                  <img src="https://html.pixelfit.agency/foodix/assets/images/testimonial/author-1.jpg" class="rounded-circle me-3" width="50" height="50" />
+                  <div>
+                    <strong style="color: black;">David Liam</strong><br />
+                    <small style="color: black;">CEO</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="border rounded p-4 h-100 bg-white">
+                <div class="mb-2 text-warning">
+                  ★★★★★
+                </div>
+                <p style="color: black;">From the moment we walked in, we were impressed by the warm arrd inviting atmosphere. The food was exceptional-each dish was bursting with fresh, vibrant flavors. The staff was attentive and knowledgeable, making our dining experience..</p>
+                <div class="d-flex align-items-center mt-3">
+                  <img src="https://html.pixelfit.agency/foodix/assets/images/testimonial/author-2.jpg" class="rounded-circle me-3" width="50" height="50" />
+                  <div>
+                    <strong style="color: black;">Alex Mika</strong><br />
+                    <small style="color: black;">Product Designer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="border rounded p-4 h-100 bg-white">
+                <div class="mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p style="color: black;">From the moment we walked in, we were impressed by the warm arrd inviting atmosphere. The food was exceptional-each dish was bursting with fresh, vibrant flavors. The staff was attentive and knowledgeable, making our dining experience.</p>
+                <div class="d-flex align-items-center mt-3">
+                  <img src="https://html.pixelfit.agency/foodix/assets/images/testimonial/author-2.jpg" class="rounded-circle me-3" width="50" height="50" />
+                  <div>
+                    <strong style="color: black;">Sara Noor</strong><br />
+                    <small style="color: black;">Marketing Head</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="border rounded p-4 h-100 bg-white">
+                <div class="mb-2 text-warning">
+                  ★★★★★
+                </div>
+                <p style="color: black;">From the moment we walked in, we were impressed by the warm arrd inviting atmosphere. The food was exceptional-each dish was bursting with fresh, vibrant flavors. The staff was attentive and knowledgeable, making our dining experience.</p>
+                <div class="d-flex align-items-center mt-3">
+                  <img src="https://html.pixelfit.agency/foodix/assets/images/testimonial/author-3.jpg" class="rounded-circle me-3" width="50" height="50" />
+                  <div>
+                    <strong style="color: black;">Ali Raza</strong><br />
+                    <small style="color: black;">Software Engineer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+  <div class="text-center mb-5">
+    <p class="text-uppercase text-warning fw-bold small mb-1">Our Latest Blog</p>
+    <h2 class="fw-bold text-uppercase" style="color: black;">Discover Our Latest Blog <br>Posts</h2>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/blog/blog-17.jpg" class="card-img-top" alt="Red Potatoes">
+        <div class="card-body">
+          <p class="text-muted small mb-1">By David &nbsp; | &nbsp; Comment (2)</p>
+          <h5 class="card-title fw-bold text-uppercase">Crispy Stovetop Roasted Red Potatoes Foods</h5>
+          <p class="card-text">Crispy stovetop red potatoes, seasoned to perfection, golden and delicious.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/blog/blog-18.jpg" class="card-img-top" alt="Boiled Eggs">
+        <div class="card-body">
+          <p class="text-muted small mb-1">By David &nbsp; | &nbsp; Comment (2)</p>
+          <h5 class="card-title fw-bold text-uppercase">How to Make Jimmy Soft Boiled Eggs at Home</h5>
+          <p class="card-text">Make Jimmy soft-boiled eggs at home with tender whites and creamy yolks.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://html.pixelfit.agency/foodix/assets/images/blog/blog-19.jpg" class="card-img-top" alt="Soft Pretzels">
+        <div class="card-body">
+          <p class="text-muted small mb-1">By David &nbsp; | &nbsp; Comment (2)</p>
+          <h5 class="card-title fw-bold text-uppercase">Traditional Soft Pretzels with Sweet Beer Cheese</h5>
+          <p class="card-text">Warm, traditional soft pretzels served with rich, sweet beer cheese dip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white pt-5 pb-3" style="width: 100%;">
+  <div class="container-fluid px-5">
+    <div class="row text-md-left text-center">
+      <div class="col-md-3 mb-4">
+        <h4 class="text-uppercase fw-bold text-danger">
+          <i class="fa-solid fa-fire-flame-curved me-1"></i> FOODIX
+        </h4>
+        <p>Discover culinary delights recipes and inspiration in our delightful food haven.</p>
+        <div>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Contact Us</h6>
+        <p class="mb-1">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+        <p class="mb-1">+88-344-667-999</p>
+        <p class="mb-1">order@foodix.com</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Quick Link</h6>
+        <p class="mb-1"><a href="#" class="text-white text-decoration-none">Home</a></p>
+        <p class="mb-1"><a href="#" class="text-white text-decoration-none">About Us</a></p>
+        <p class="mb-1"><a href="#" class="text-white text-decoration-none">Services</a></p>
+        <p class="mb-1"><a href="#" class="text-white text-decoration-none">Our Menu</a></p>
+        <p class="mb-1"><a href="#" class="text-white text-decoration-none">Gallery</a></p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Opening Time</h6>
+        <p class="mb-1">Monday: 10.05am - 05.05pm</p>
+        <p class="mb-1">Tuesday: 10.20am - 05.30pm</p>
+        <p class="mb-1">Wednesday: 10.30am - 05.55pm</p>
+        <p class="mb-1">Thursday: 11.00am - 07.15pm</p>
+        <p class="mb-1 text-warning fw-bold">Friday: Closed</p>
+      </div>
+    </div>
+    <div class="text-center pt-3 border-top border-secondary mt-3">
+      <p class="mb-0 text-white-50">© 2024 All rights reserved design by Pixelift</p>
+    </div>
+  </div>
+</footer>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartLabel">My cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex mb-3 align-items-start">
+      <img src="https://html.pixelfit.agency/foodix/assets/images/product/cart-1.jpg" width="60" class="me-2 rounded" alt="">
+      <div>
+        <strong>Urban Bourbon Bliss Ribeye</strong><br>
+        <small>1 × $940.00</small>
+      </div>
+      <button class="btn btn-sm ms-auto text-danger"><i class="bi bi-trash"></i></button>
+    </div>
+    <div class="d-flex mb-3 align-items-start">
+      <img src="https://html.pixelfit.agency/foodix/assets/images/product/cart-2.jpg" width="60" class="me-2 rounded" alt="">
+      <div>
+        <strong>Artisanal Truffle Tango Sirlion</strong><br>
+        <small>1 × $940.00</small>
+      </div>
+      <button class="btn btn-sm ms-auto text-danger"><i class="bi bi-trash"></i></button>
+    </div>
+    <div class="d-flex mb-3 align-items-start">
+      <img src="https://html.pixelfit.agency/foodix/assets/images/product/cart-3.jpg" width="60" class="me-2 rounded" alt="">
+      <div>
+        <strong>Smoked Paprika Perfection</strong><br>
+        <small>1 × $940.00</small>
+      </div>
+      <button class="btn btn-sm ms-auto text-danger"><i class="bi bi-trash"></i></button>
+    </div>
+    <div class="d-flex mb-3 align-items-start">
+      <img src="https://html.pixelfit.agency/foodix/assets/images/product/cart-4.jpg" width="60" class="me-2 rounded" alt="">
+      <div>
+        <strong>Tandoori Temptation Tender</strong><br>
+        <small>1 × $940.00</small>
+      </div>
+      <button class="btn btn-sm ms-auto text-danger"><i class="bi bi-trash"></i></button>
+    </div>
+    <div class="mt-4">
+      <strong>Subtotal:</strong> $940.00
+    </div>
+    <a href="checkout.html" class="btn btn-danger w-100 mt-3">Proceed to checkout</a>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
